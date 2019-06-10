@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2DB01266-5AE7-4C0F-A7D7-774869E9A7F2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>raudevhackplatform</RootNamespace>
+    <AssemblyName>raudevhackplatform</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>transparent_bg_GJA_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.Core, Version=1.8.0.1, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL" />
+    <Reference Include="Bunifu.UI.WinForms.BunifuTransition">
+      <HintPath>..\..\..\Bunifu_UI_WinForms_1.9.0.0_Downloadly.ir\Bunifu UI WinForms 1.9.0.0\Bunifu UI WinForms 1.9.0.0\Bunifu.UI.WinForms.BunifuTransition.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\Bunifu UI WinForms 1.8.0.1\Bunifu UI WinForms 1.8.0.1\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.5.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.5.1\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="MediaControls">
+      <HintPath>..\..\..\staging_developbuilding\DEVELOPBUILDING\VAULT\bin\Debug\MediaControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MySql.Data, Version=8.0.15.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.15\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.4.6.0-preview3.19128.7\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Management.Instrumentation" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.AccessControl, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.AccessControl.4.6.0-preview3.19128.7\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Permissions, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Permissions.4.6.0-preview3.19128.7\lib\net461\System.Security.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Principal.Windows.4.6.0-preview3.19128.7\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin.Designer.cs">
+      <DependentUpon>admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="principalform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="principalform.Designer.cs">
+      <DependentUpon>principalform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="verificare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="verificare.Designer.cs">
+      <DependentUpon>verificare.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="admin.resx">
+      <DependentUpon>admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="principalform.resx">
+      <DependentUpon>principalform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="verificare.resx">
+      <DependentUpon>verificare.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p1.PNG" />
+    <None Include="Resources\p3.PNG" />
+    <None Include="Resources\p4.PNG" />
+    <None Include="Resources\p5.PNG" />
+    <None Include="Resources\p6.PNG" />
+    <None Include="Resources\p7.PNG" />
+    <None Include="Resources\p8.PNG" />
+    <None Include="Resources\p9.PNG" />
+    <None Include="Resources\p10.PNG" />
+    <None Include="Resources\p11.PNG" />
+    <None Include="Resources\p12.PNG" />
+    <None Include="Resources\p13.PNG" />
+    <None Include="Resources\p14.PNG" />
+    <None Include="Resources\p15.PNG" />
+    <None Include="Resources\p16.PNG" />
+    <None Include="Resources\p17.PNG" />
+    <None Include="Resources\p18.PNG" />
+    <None Include="Resources\p19.PNG" />
+    <None Include="Resources\p20.PNG" />
+    <None Include="Resources\p21.PNG" />
+    <None Include="Resources\p22.PNG" />
+    <None Include="Resources\p23.PNG" />
+    <None Include="Resources\p24.PNG" />
+    <None Include="Resources\p25.PNG" />
+    <None Include="Resources\p26.PNG" />
+    <None Include="Resources\p27.PNG" />
+    <None Include="Resources\p28.PNG" />
+    <None Include="Resources\p29.PNG" />
+    <None Include="Resources\p30.PNG" />
+    <None Include="Resources\p31.PNG" />
+    <None Include="Resources\p32.PNG" />
+    <None Include="Resources\p33.PNG" />
+    <None Include="Resources\p34.PNG" />
+    <None Include="Resources\p35.PNG" />
+    <None Include="Resources\p36.PNG" />
+    <None Include="Resources\p37.PNG" />
+    <None Include="Resources\p38.PNG" />
+    <None Include="Resources\p39.PNG" />
+    <None Include="Resources\p40.PNG" />
+    <None Include="Resources\p41.PNG" />
+    <None Include="Resources\p42.PNG" />
+    <None Include="Resources\p43.PNG" />
+    <None Include="Resources\p44.PNG" />
+    <None Include="Resources\p45.PNG" />
+    <None Include="Resources\p46.PNG" />
+    <None Include="Resources\p47.PNG" />
+    <None Include="Resources\p48.PNG" />
+    <None Include="Resources\p49.PNG" />
+    <None Include="Resources\p50.PNG" />
+    <None Include="Resources\p51.PNG" />
+    <None Include="Resources\p52.PNG" />
+    <None Include="Resources\p53.PNG" />
+    <None Include="Resources\p54.PNG" />
+    <None Include="Resources\p55.PNG" />
+    <None Include="Resources\p56.PNG" />
+    <None Include="Resources\p57.PNG" />
+    <None Include="Resources\p58.PNG" />
+    <None Include="Resources\p59.PNG" />
+    <None Include="Resources\p60.PNG" />
+    <None Include="Resources\p61.PNG" />
+    <None Include="Resources\p62.PNG" />
+    <None Include="Resources\p63.PNG" />
+    <None Include="Resources\p64.PNG" />
+    <None Include="Resources\p65.PNG" />
+    <None Include="Resources\p66.PNG" />
+    <None Include="Resources\p67.PNG" />
+    <None Include="Resources\p68.PNG" />
+    <None Include="Resources\p69.PNG" />
+    <None Include="Resources\p70.PNG" />
+    <None Include="Resources\p71.PNG" />
+    <None Include="Resources\p72.PNG" />
+    <None Include="Resources\p73.PNG" />
+    <None Include="Resources\p74.PNG" />
+    <None Include="Resources\p75.PNG" />
+    <None Include="Resources\p76.PNG" />
+    <None Include="Resources\p77.PNG" />
+    <None Include="Resources\p78.PNG" />
+    <None Include="Resources\p79.PNG" />
+    <None Include="Resources\p80.PNG" />
+    <None Include="Resources\p81.PNG" />
+    <None Include="Resources\p82.PNG" />
+    <None Include="Resources\p83.PNG" />
+    <None Include="Resources\p84.PNG" />
+    <None Include="Resources\p85.PNG" />
+    <None Include="Resources\p86.PNG" />
+    <None Include="Resources\p87.PNG" />
+    <None Include="Resources\p88.PNG" />
+    <None Include="Resources\p89.PNG" />
+    <None Include="Resources\p90.PNG" />
+    <None Include="Resources\p91.PNG" />
+    <None Include="Resources\p92.PNG" />
+    <None Include="Resources\p93.PNG" />
+    <None Include="Resources\p94.PNG" />
+    <None Include="Resources\p95.PNG" />
+    <None Include="Resources\p96.PNG" />
+    <None Include="Resources\p97.PNG" />
+    <None Include="Resources\p98.PNG" />
+    <None Include="Resources\p99.PNG" />
+    <None Include="Resources\p100.PNG" />
+    <None Include="Resources\p2.PNG" />
+    <Content Include="transparent_bg_GJA_icon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
